@@ -1,9 +1,15 @@
 import React from 'react'
+import { RouterProvider} from 'react-router-dom';
+import routes from './routes/routes';
+import Register from '../src/pages/Register'
+import Login from '../src/pages/Login'
 
 function App() {
   return (
     <>
-    <h1 className='bg-yellow-200 text-center font-bold text-2xl'>Hii EveryOne</h1>
+    <RouterProvider router={routes}/>
+    {/* <Register/> */}
+    {/* <Login/> */}
     </>
   )
 }

@@ -1,14 +1,17 @@
+
 const express = require("express");
 
+const {
+    register_controller,
+    login_controller
+} = require("../controller/auth.controller");
+
 const publicRoute = express.Router();
-// Router method give only routes
 
-// publicRoute.get("/login",(req,res)=>{
-//     res.status(200).json({message:"This is Login request"})
-// });
+// Register route
+publicRoute.post("/register", register_controller);
 
-publicRoute.post("/register",(req,res)=>{
-    res.status(200).json({message:"User registered Successfully"})
-})
+// Login route
+publicRoute.post("/login", login_controller);
 
-module.exports = {publicRoute}
+module.exports = { publicRoute };

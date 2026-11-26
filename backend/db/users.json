@@ -1,3 +1,10 @@
 [
-    
+  {
+    "id": "c7eab3f2-7eb9-4d02-ab77-537c80d968e9",
+    "username": "Laxmi",
+    "age": 22,
+    "email": "laxmi@gmail.com",
+    "password": "123456",
+    "gender": "Female"
+  }
 ]
