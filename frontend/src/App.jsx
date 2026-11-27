@@ -1,17 +1,16 @@
 import React from 'react'
-import { RouterProvider} from 'react-router-dom';
-import routes from './routes/routes';
-import Register from '../src/pages/Register'
-import Login from '../src/pages/Login'
+import { RouterProvider } from 'react-router-dom'
+import { routes } from './routes/routes'
+import { ToastContainer } from 'react-toastify'
 
-function App() {
+const App = () => {
   return (
     <>
     <RouterProvider router={routes}/>
-    {/* <Register/> */}
-    {/* <Login/> */}
+    <ToastContainer/>
     </>
+    
   )
 }
 
-export default App;
+export default App
